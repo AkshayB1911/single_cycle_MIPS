@@ -2,14 +2,14 @@
 
 > A basic single-cycle MIPS CPU built in Verilog. No pipelining, just straight execution.
 
-## 🗂️ Files
+## Files
 
 | File | Description |
 |------|-------------|
 | `lab_8_group_5.v` | Top-level module (`finall`) and all internal modules. |
 | `lab_8_group_5_tb.v` | Testbench with memory preloading and waveform generation. |
 
-## 🚀 Quick Start (Icarus + GTKWave)
+##  Quick Start (Icarus + GTKWave)
 
 ```bash
 # Compile the design and testbench
@@ -26,7 +26,7 @@ gtkwave dump.vcd
 
 ```
 
-## 🔧 Modules
+##  Modules
 
 - **`signextend`**: Extends 16-bit immediates to 32-bit (signed).
 - **`register32`**: 32-bit register used for PC and other internal state.
@@ -52,7 +52,7 @@ gtkwave dump.vcd
 | `mem_addr_select_instr[7:0]` | in | Address for instruction memory |
 | `mem_addr_select_data[7:0]` | in | Address for data memory |
 
-## ✅ Supported Instructions
+##  Supported Instructions
 
 | Type | Mnemonic | Opcode/Funct | Description |
 |------|----------|--------------|-------------|
@@ -69,22 +69,12 @@ gtkwave dump.vcd
 
 > *More instructions like `addi` can be added by extending control logic.*
 
-## 🧪 Simulation Tips
+## Simulation Tips
 
 - Set `load_memory = 1` while loading instructions/data.
 - After loading, set `load_memory = 0` and let the processor run.
 - Waveform is written to `dump.vcd` for inspection using GTKWave.
 
-## 🏗️ Synthesis
 
-- Written in synthesizable Verilog‑2001.
-- Should work on most FPGAs with ≥ ~2k LUTs and at least two dual-port BRAMs.
-- Compatible with tools like Quartus, Vivado, and Diamond.
 
-## 📜 License
 
-[MIT License](LICENSE)
-
----
-
-> *Made by Group 5, IIT Guwahati — because documentation is also part of the project 🙂*
