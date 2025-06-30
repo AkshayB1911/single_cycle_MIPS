@@ -1,6 +1,6 @@
 # Single-Cycle MIPS Processor – Group 5
+This project implements a single-cycle 32-bit MIPS processor using Verilog. In a single-cycle design, each instruction—whether it's arithmetic, memory access, or control flow—is executed in exactly one clock cycle. This means that the datapath and control logic are designed to handle the entire instruction execution flow (fetch, decode, execute, memory access, and write-back) in one go.
 
-> A basic single-cycle MIPS CPU built in Verilog. No pipelining, just straight execution.
 
 ## Files
 
